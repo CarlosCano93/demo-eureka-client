@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-eureka-client
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://172.17.16.100:8080}
+  instance:
+    preferIpAddress: true
